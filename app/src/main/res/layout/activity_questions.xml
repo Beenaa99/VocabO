@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questions"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/textColorBlack"
+            android:textSize="22sp"
+            android:text="What isssss?"/>
+
+        <TextView
+            android:id="@+id/tv_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/merienda_one"
+            android:gravity="center"
+            android:text="WORD."
+            android:textSize="40sp"
+            android:layout_marginBottom="30sp"
+             />
+        <LinearLayout
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="5"
+                android:minHeight="50dp"
+                android:outlineAmbientShadowColor="@android:color/holo_blue_dark"
+
+                android:progress="0" />
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColorHint="#7A8089"
+                android:textSize="14sp"
+                android:text="0/3"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_optionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7a8089"
+            android:textSize="18sp"
+            android:background="@drawable/option_border"
+            android:text="APPLE"
+            android:fontFamily="@font/amarante"
+            />
+         <TextView
+                    android:id="@+id/tv_optionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="#7a8089"
+                    android:textSize="18sp"
+                    android:background="@drawable/option_border"
+                    android:text="BANANA"
+                    android:fontFamily="@font/amarante"
+                    />
+     <TextView
+                android:id="@+id/tv_optionThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/amarante"
+                android:padding="15dp"
+                android:textColor="#7a8089"
+                android:textSize="18sp"
+                android:background="@drawable/option_border"
+                android:text="CUCUMBER"
+                />
+
+     <TextView
+                android:id="@+id/tv_optionFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7a8089"
+                android:textSize="18sp"
+                android:background="@drawable/option_border"
+                android:text="DOCITO"
+                android:fontFamily="@font/amarante"
+                />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@color/Sec2"
+            android:fontFamily="@font/amarante"
+            android:text="SUBMIT"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>
